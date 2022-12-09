@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <!-- aos css link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--?php
+
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message" data-aos="zoom-out"-->
+  <span>'.$message.'</span>
+  <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+  <!-- header section starts  -->
+  <header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#home" class="logo">WEBGIS</a>
+    <nav class="navbar">
+      <a href="#home" class="active">home</a>
+      <a href="#about">about</a>
+      <a href="#services">Peta</a>
+      <a href="#portfolio">Gambar</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div class="follow">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-github"></a>
+    </div>
+  </header>
+  <!-- header section ends -->
+  <!-- home section starts  -->
+  <section class="home" id="home">
+    <div class="image" data-aos="fade-right">
+      <img src="images/banjir3.jpeg" alt="">
+    </div>
+    <div class="content">
+      <h3 data-aos="fade-up">Selamat Datang Di WEBGIS</h3>
+      <span data-aos="fade-up">Peta Bencana Banjir Kabupaten Gresik </span>
+      <p data-aos="fade-up">Kabupaten Gresik, Jawa Timur, Indonesia.</p>
+      <a data-aos="fade-up" href="#about" class="btn">about </a>
+    </div>
+  </section>
+  <!-- home section ends -->
+  <!-- about section starts  -->
+  <section class="about" id="about">
+    <h1 class="heading" data-aos="fade-up"> <span>ABOUT</span> </h1>
+    <div class="biography">
+      <p data-aos="fade-up">Kabupaten Gresik secara lingkungan fisik merupakan wilayah yang rentan terhadap bencana banjir, hal ini dikarenakan sebagian besar wilayahnya terletak pada ketinggian antara 0 – 25 mdpal. Untuk meminimalisir dampak banjir tersebut maka perlu dibuat langkah-langkah strategis dengan mengacu pada kondisi fisik wilayah yang bersangkutan. Kabupaten Gresik terletak antara 7° - 8° Lintang Selatan dan 112° - 113° Bujur Timur, dengan luas wilayah 104525,15 Ha. Wilayahnya merupakan dataran rendah dengan ketinggian 0 - 25 meter di atas permukaan air laut (kecuali Kecamatan Panceng mempunyai ketinggian lebih dari 25 meter di atas permukaan air laut). Hampir sepertiga bagian dari wilayah Kabupaten Gresik merupakan daerah pesisir pantai. </p>
+    
+  </section>
+  <!-- about section ends -->
+  <!-- services section starts  -->
+  <section class="services" id="services">
+    <h1 class="heading" data-aos="fade-up"> <span>PETA</span> </h1>
+  <iframe src="gis/gis.html" title="Website Page Title" width=1100px height=500px></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- services section ends -->
+  <!-- portfolio section starts  -->
+  <section class="portfolio" id="portfolio">
+    <h1 class="heading" data-aos="fade-up"> <span>GAMBAR</span> </h1>
+    <div class="box-container">
+      <div class="box" data-aos="zoom-in">
+        <img src="images/resiko banjir.jpeg" alt="">
+        <h3>Resiko Banjir</h3>
+      </div>
+      <div class="box" data-aos="zoom-in">
+        <img src="images/jaringan.jpeg" alt="">
+        <h3>Jaringan Jalan</h3>
+      </div>
+      <div class="box" data-aos="zoom-in">
+        <img src="images/jalur.jpeg" alt="">
+        <h3>Jalur Evakuasi</h3>
+      </div>
+      <div class="box" data-aos="zoom-in">
+        <img src="images/tempat evakuasi.jpeg" alt="">
+        <h3>Tempat Evakuasi</h3>
+      </div>
+      <div class="box" data-aos="zoom-in">
+        <img src="images/batas kecamatan.jpeg" alt="">
+        <h3>Batas Kecamatan</h3>
+      </div>
+      <div class="box" data-aos="zoom-in">
+        <img src="images/kuliner terdampak.jpeg" alt="">
+        <h3>Kuliner Terdampak</h3>
+      </div>
+    </div>
+  </section>
+  <!-- portfolio section ends -->
+  <!-- contact section starts  -->
+  <section class="contact" id="contact">
+    <h1 class="heading" data-aos="fade-up"> <span>contact me</span> </h1>
+    <form action="" method="post">
+      <div class="flex">
+        <input data-aos="fade-right" type="text" name="name" placeholder="enter your name" class="box" required="">
+        <input data-aos="fade-left" type="email" name="email" placeholder="enter your email" class="box" required="">
+      </div>
+      <input data-aos="fade-up" type="number" min="0" name="number" placeholder="enter your number" class="box" required="">
+      <textarea data-aos="fade-up" name="message" class="box" required="" placeholder="enter your message" cols="30" rows="10"></textarea>
+      <input type="submit" data-aos="zoom-in" value="send message" name="send" class="btn">
+    </form>
+    <div class="box-container">
+      <div class="box" data-aos="zoom-in">
+        <i class="fas fa-phone"></i>
+        <h3>phone</h3>
+        <p>081336179627</p>
+      </div>
+      <div class="box" data-aos="zoom-in">
+        <i class="fas fa-envelope"></i>
+        <h3>email</h3>
+        <p>sindyyuandhita@gmail.com</p>
+        <a href="mailto:sindyyuandhita@gmail.com" <="" a="">
+        </a>
+      </div><a href="mailto:sindyyuandhita@gmail.com" <="" a="">
+        <div class="box" data-aos="zoom-in">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>address</h3>
+          <p>Sragen, Jawa Tengah</p>
+        </div>
+      </a>
+    </div><a href="mailto:sindyyuandhita@gmail.com" <="" a="">
+    </a>
+  </section><a href="mailto:sindyyuandhita@gmail.com" <="" a="">
+    <!-- contact section ends -->
+    <div class="credit"> © copyright @
+      <!--?php echo date('Y'); ?--> by <span>Sindy Yuandhita</span> </div>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <!-- aos js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        delay: 300
+      });
+    </script>
+    <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+  </a>
+</body>
+
+</html>
